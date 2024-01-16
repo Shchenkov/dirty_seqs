@@ -1,5 +1,3 @@
-# This script is producing the "dirty" ML tree.
-
 library(BiocManager)
 library(BiocGenerics)
 library(msa)
