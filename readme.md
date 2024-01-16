@@ -1,27 +1,29 @@
 I.	How to use the script.
 
-1) Place “start_csv.csv” (see attached example file “start_csv.csv”) and “dirty_seqs.r” files into the same directory.
-2) Open the script in “R” (it was made under R v. 4.3.2).
+1) Place â€œstart_csv.csvâ€ (see attached example file â€œstart_csv.csvâ€) and â€œdirty_seqs.Râ€ files into the same directory.
+2) Open the script in â€œRâ€ (it was made under R v. 4.3.2).
 3) Start the script.
 
 II.	Some points.
 
 1) Be sure that all necessary libraries are installed and working properly.
-2) You should change “gap.end” and “gap.mid” parameters according to your inner reasons.
-3) Remove the “#” if you want to test all models and to use the best fitted model. Do not forget to replace the best fitted model downstream.
+2) You should change â€œgap.endâ€ and â€œgap.midâ€ parameters according to your inner reasons.
+3) Remove the â€œ#â€ if you want to test all models and to use the best fitted model. Do not forget to replace the best fitted model downstream.
 
 III.	If you want to start the script under Windows OS.
 
-1) Place “start_csv.csv”, “dirty_seqs.r”, and “start_dirty_seqs.bat” files into the same directory.
-2) Change “start_dirty_seqs.bat” file according to your local OS (you must replace the path to directory containing “Rscript.exe”). 
+1) Place â€œstart_csv.csvâ€, â€œdirty_seqs.râ€, and â€œstart_dirty_seqs.batâ€ files into the same directory.
+2) Change â€œstart_dirty_seqs.batâ€ file according to your local OS (you must replace the path to directory containing â€œRscript.exeâ€). 
 NB! You'll probably have to correct the script according to the command prompt of your local operating system. 
 If it done correctly, working directory will be set automatically.
-3) Start the “start_dirty_seqs.bat” with double click.
+3) Start the â€œstart_dirty_seqs.batâ€ with double click.
 
-IV.	The script will generate four files. It could be useful during the processing of your data:
-  - “final_output.fasta” – *.fasta file after downloading the sequences from GenBank NCBI.
-  - “myMuscleAlignment.fasta” – aligned sequences.
-  - “trimmedMuscleAlignment.fasta” – trimmed sequences.
-  - “ML_tree.tre” – Maximum Likelihood tree with rapid bootstraps based on trimmed alignment.
+IV.	The script will generate six files. It could be useful during the processing of your data:
+  - â€œfinal_output.fastaâ€ â€“ *.fasta file after downloading the sequences from GenBank NCBI.
+  - â€œmyMuscleAlignment.fastaâ€ â€“ aligned sequences.
+  - â€œtrimmedMuscleAlignment.fastaâ€ â€“ trimmed sequences.
+  - â€œML_tree.treâ€ â€“ Maximum Likelihood tree with rapid bootstraps based on trimmed alignment.
+  - â€œmodel.testing.csvâ€ - output of model testing step.
+  - â€œtrimmedMuscleAlignment.nxsâ€ - nexus-file (after trimming of msa) with bayes-block, added to the end of the file. File is ready-to use with MrBayes (i.e. on CIPRES portal).
 
 Feel free to contact me: svshchenkov@yandex.ru (Sergei).
